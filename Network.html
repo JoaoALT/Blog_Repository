@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My hobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <button onclick="ButtonPressed()">Atrás</button>
+    <div class="Hobbies">
+        <div class="Guitar">
+            <span title="¡Cliclea los nombres!"><img src="Images/haha.gif" alt="JazG" style="width:240px;height:240px; border-radius: 30px;"></span>
+            <p>Donde puedes encontrarme:</p>
+            <p onclick = "CageT()">㊊ Steam</p>
+            <p>㊛ Epic</p>
+            <p>㊠ Riot Games</p>
+            <p onclick = "DavidB()">㊕ Twitch</p>
+    
+        </div>
+
+</body>
+
+<style type="text/css">
+    .Hobbies{
+        margin-top: 3%;
+        text-align: center;
+    }
+    body{
+            font-family:'Roboto Mono', monospace;
+            background-image: url("/Blog/Images/networkBack.gif");
+            background-size:1400px 630px;
+            background-repeat:no-repeat;
+            color: rgb(0, 217, 255);
+    }
+    button{
+            font-family:'Roboto Mono', monospace;
+            border-radius: 5px;
+            width: 60px;
+            height: 30px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(51, 50, 114);
+            border-color: rgba(0,0,0,0);
+    }
+</style>
+<script type="text/javascript">
+    function CageT(){
+        const url = "https://steamcommunity.com/id/MinCout/" 
+        window.open(url)
+    }
+    function DavidB(){
+        const url = "https://www.twitch.tv/mincout" 
+        window.open(url)
+    }
+    function ButtonPressed(){
+        const url = "/Blog/index.html" 
+        window.open(url, "_self")
+    }
+</script>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My hobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <button onclick="ButtonPressed()">Atrás</button>
+    <br><br><br><br><br><br>
+    <div class="Hobbies">
+        <div class="Draws">
+            <img src="Images/drawing.gif" alt="JazG" style="width:190px;height:190px; border-radius: 30px;">
+            <p>¡Mis redes sociales a donde subo mis dibujos!</p>
+            <p onclick = "INSTA()">㊊ Mi Instagram.</p>
+            <p onclick = "TUMBLR()">㊛ Mi Tumblr.</p>
+        </div>
+
+        <div class="Guitar">
+            <span title="¡Cliclea los nombres!"><img src="Images/music.gif" alt="JazG" style="width:190px;height:190px; border-radius: 30px;"></span>
+            <p>¡Mis artistas preferidos!</p>
+            <p onclick = "CageT()">㊊ Cage the elephant</p>
+            <p onclick = "Cuco()">㊛ Cuco</p>
+            <p onclick = "Queen()">㊠ Queen</p>
+            <p onclick = "DavidB()">㊕ David Bowie</p>
+    
+        </div>
+
+        <div class="GameDev">
+            <img src="Images/pixel_perfectgame.gif" alt="JazG" style="width:190px;height:190px; border-radius: 30px;">
+            <p>Por ahora no tengo ningun proyecto terminado, asi que les dejo los motores que estoy aprendiendo!</p>
+            <p>㊊ Unity</p>
+            <p>㊛ Unreal Engine</p>
+        </div>
+
+    </div>
+
+
+</body>
+
+<style type="text/css">
+    .Hobbies{
+        display: flex;
+        text-align: center;
+        background-color: rgba(0,0,0,0.3);
+    }
+    .Draws{
+        float: left;
+        width: 33%;
+    }
+    .Guitar{
+        float: center;
+        width: 33%;
+    }
+    .GameDev{
+        float: right;
+        width: 33%;
+    }
+    body{ 
+            font-style: bold;
+            font-family:'Roboto Mono', monospace;
+            background-image: url("/Blog/Images/Hobbies_Back.gif");
+            background-size:1367px 626px;
+            background-repeat:no-repeat;
+            color: rgb(243, 184, 184);
+    }
+    button{
+            font-family:'Roboto Mono', monospace;
+            border-radius: 5px;
+            width: 60px;
+            height: 30px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(51, 50, 114);
+            border-color: rgba(0,0,0,0);
+    }
+</style>
+<script type="text/javascript">
+    function INSTA(){
+        const url = "https://www.instagram.com/mincout_1/" 
+        window.open(url)
+    }
+    function TUMBLR(){
+        const url = "https://www.tumblr.com/mincout" 
+        window.open(url)
+    }
+    function CageT(){
+        const url = "https://www.youtube.com/channel/UCOk9wZlQNsWjb7gJhnvmbkQ" 
+        window.open(url)
+    }
+    function Cuco(){
+        const url = "https://www.youtube.com/channel/UCtUa6Ufbn3FbUbZ7WAXSx5A" 
+        window.open(url)
+    }
+    function Queen(){
+        const url = "https://www.youtube.com/channel/UCiMhD4jzUqG-IgPzUmmytRQ" 
+        window.open(url)
+    }
+    function DavidB(){
+        const url = "https://www.youtube.com/channel/UC8YgWcDKi1rLbQ1OtrOHeDw" 
+        window.open(url)
+    }
+    function ButtonPressed(){
+        const url = "/Blog/index.html"
+        window.open(url, "_self")
+    }
+</script>
+</html>
